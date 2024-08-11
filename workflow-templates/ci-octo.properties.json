@@ -3,7 +3,7 @@
     "description": "Octo Organization CI starter workflow.",
     "iconName": "octicon cpu",
     "categories": [
-        "Go"
+        "deployment"
     ],
     "filePatterns": [
         "package.json$",
