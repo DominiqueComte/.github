@@ -1,0 +1,36 @@
+name: Maven CI
+
+on:
+  push:
+    branches: [ $default-branch ]
+  pull_request:
+    branches: [ $default-branch ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Set up JDK
+      uses: actions/setup-java@v4
+      with:
+        java-version: '21'
+        distribution: 'temurin'
+        cache: maven
+    - name: Cache local Maven repository
+      uses: actions/cache@v4
+      with:
+        path: ~/.m2/repository
+        key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
+        restore-keys: |
+          ${{ runner.os }}-maven-
+    - name: Build with Maven
+      run: mvn -B package
+    - name: Publish unit test results
+      uses: EnricoMi/publish-unit-test-result-action@v2
+      if: ${{ matrix.comment-test-results }}
+      continue-on-error: true
+      with:
+        check_name: "JUnit test results"
+        junit_files: "assertj*/**/target/surefire-reports/TEST-*.xml"

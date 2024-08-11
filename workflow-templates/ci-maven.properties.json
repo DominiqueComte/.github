@@ -1,0 +1,11 @@
+{
+    "name": "Maven CI",
+    "description": "Maven CI starter workflow.",
+    "iconName": "octicon package",
+    "categories": [
+        "continuous-integration"
+    ],
+    "filePatterns": [
+        "pom.xml"
+    ]
+}
