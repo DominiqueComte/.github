@@ -1,6 +1,6 @@
 {
-    "name": "Maven CI",
-    "description": "Maven CI starter workflow.",
+    "name": "Maven for JDK 21 CI",
+    "description": "Maven for JDK 21 CI starter workflow.",
     "iconName": "octicon package",
     "categories": [
         "continuous-integration"
