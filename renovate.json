@@ -2,5 +2,29 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "config:recommended"
+  ],
+  "schedule": [
+    "before 7am"
+  ],
+  "packageRules": [
+    {
+      "groupName": "All Maven Plugins",
+      "matchManagers": [
+        "maven"
+      ],
+      "matchPackageNames": [
+        "/^org.apache.maven.plugins/",
+        "/^com.github.spotbugs/"
+      ]
+    },
+    {
+      "groupName": "All Angular Updates",
+      "matchManagers": [
+        "npm"
+      ],
+      "matchPackageNames": [
+        "/^@angular\//"
+      ]
+    }
   ]
 }
