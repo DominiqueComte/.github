@@ -8,13 +8,13 @@
   ],
   "packageRules": [
     {
-      "groupName": "All Maven Plugins",
+      "groupName": "Maven Surefire Plugins",
       "matchManagers": [
         "maven"
       ],
       "matchPackageNames": [
-        "/^org.apache.maven.plugins/",
-        "/^com.github.spotbugs/"
+        "/surefire/",
+        "/failsafe/"
       ]
     },
     {
