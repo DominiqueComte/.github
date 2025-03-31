@@ -15,7 +15,8 @@
       "matchPackageNames": [
         "/surefire/",
         "/failsafe/"
-      ]
+      ],
+      "changeLogUrl": "https://github.com/apache/maven-surefire/releases/"
     },
     {
       "groupName": "All Angular Updates",
