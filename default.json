@@ -6,6 +6,9 @@
   "schedule": [
     "before 7am"
   ],
+  "automerge": true,
+  "automergeType": "pr",
+  "automergeStrategy": "squash",
   "packageRules": [
     {
       "groupName": "Maven Surefire Plugins",
