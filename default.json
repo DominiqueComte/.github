@@ -30,6 +30,16 @@
         "/^@angular\//",
         "/^@angular-devkit\//"
       ]
+    },
+    {
+      "groupName": "Apache Log4j Updates",
+      "matchManagers": [
+        "maven"
+      ],
+      "matchPackagePrefixes": [
+        "org.apache.logging.log4j"
+      ],
+      "changeLogUrl": "https://logging.apache.org/log4j/2.x/release-notes.html"
     }
   ]
 }
