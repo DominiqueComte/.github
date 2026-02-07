@@ -27,7 +27,7 @@
         "npm"
       ],
       "matchPackageNames": [
-        "/^@angular\//",
+        "/^@angular\/",
         "/^@angular-devkit\//"
       ]
     },
@@ -40,6 +40,16 @@
         "org.apache.logging.log4j"
       ],
       "changeLogUrl": "https://logging.apache.org/log4j/2.x/release-notes.html"
+    },
+    {
+      "groupName": "Vitest and Related Modules Updates",
+      "matchManagers": [
+        "npm"
+      ],
+      "matchPackageNames": [
+        "vitest",
+        "@vitest/*"
+      ]
     }
   ]
 }
