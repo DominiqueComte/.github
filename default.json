@@ -6,6 +6,7 @@
   "schedule": [
     "before 7am"
   ],
+  "rangeStrategy": "bump",
   "automerge": true,
   "automergeType": "pr",
   "automergeStrategy": "squash",
